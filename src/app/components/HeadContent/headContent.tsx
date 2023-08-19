@@ -1,4 +1,4 @@
-export default function HeadContent({pageTitle}){
+export default function HeadContent(){
     return(
         <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,6 @@ export default function HeadContent({pageTitle}){
             <meta  name="theme-color" content="#405040"></meta>
             <link rel="stylesheet" href="css/style.css" />
             <script src="js/header-hamburger.js" defer></script>
-            <title>{pageTitle}</title>
         </>
     )
 }
