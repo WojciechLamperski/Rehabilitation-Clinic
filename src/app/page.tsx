@@ -6,21 +6,21 @@ export default function Home() {
    <>
     <section className="carousel main__banner" id="data-carousel">
 
-      <div className="carousel__slide carousel__slide--1" slide>
+      <div className="carousel__slide carousel__slide--1">
 
       <img className="carousel__img carousel__img--1" alt="lekarz w okularach uśmiechający się i spoglądający w stronę ekranu" src="/img/home/doctor_standing.jpg" />
 
       <div className="carousel__overlay"></div>
 
       <div className="carousel__jumbotron jumbotron carousel__jumbotron--overlay">
-          <div className="jumbotron__wrapper" text>
+          <div className="jumbotron__wrapper">
           <div className="carousel__title">
               W NZOZ rehabilitacja majowe oferujemy:
           </div>
           <div className="carousel__desc">
               Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
           </div>
-          <a href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabindex="-1" button>
+          <a href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
               Zobacz opis zabiegów
           </a>
           </div>
@@ -28,40 +28,40 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="carousel__slide carousel__slide--2" slide>
+      <div className="carousel__slide carousel__slide--2">
 
       <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/masage3.jpg" />
 
       <div className="carousel__jumbotron jumbotron">
-          <div className="jumbotron__wrapper jumbotron__wrapper--whitesmoke" text>
+          <div className="jumbotron__wrapper jumbotron__wrapper--whitesmoke">
           <div className="carousel__title">
               W naszej przychodni znajdą Państwo:
           </div>
           <div className="carousel__desc">
               Szeroką gamę zabiegów mających za zadanie przywrócenie Państwu sprawności fizycznej.
           </div>
-          <a href="/cennik" className="btn carousel__btn carousel__btn--pink" tabindex="-1" button>
+          <a href="/cennik" className="btn carousel__btn carousel__btn--pink" tabIndex="-1">
               Poznaj naszą ofertę
           </a>
           </div>
       </div>
       </div>
 
-      <div className="carousel__slide carousel__slide--3" slide>
+      <div className="carousel__slide carousel__slide--3">
 
       <img className="carousel__img carousel__img--3" alt="kobieta wykonująca masaż ręki dla klientki" src="/img/home/clinic-hand2.jpg" />
 
       <div className="carousel__overlay"></div>
 
       <div className="carousel__jumbotron">
-          <div className="jumbotron__wrapper" text>
+          <div className="jumbotron__wrapper">
           <div className="carousel__title">
               Zapraszamy Państwa do kontaktu!
           </div>
           <div className="carousel__desc">
               Telefonicznie, lub z umówieniem na miejscu
           </div>
-          <a href="/kontakt" className="btn carousel__btn carousel__btn--lightGreen" tabindex="-1" button>
+          <a href="/kontakt" className="btn carousel__btn carousel__btn--lightGreen" tabIndex="-1">
               Zobacz dane kontaktowe
           </a>
           </div>
@@ -143,7 +143,7 @@ export default function Home() {
             Jesteśmy nowoczesną i doskonale wyposażoną placówka rehabilitacyjną. W trosce o Państwa zdrowie oferujemy wysokiej jakości sprzęt rehabilitacyjny oraz wykwalifikowany personel, który służy Państwu swoją wiedzą i pomocą na każdym etapie rehabilitacji. W Naszej placówce mogą Państwo skorzystać zarówno z konsultacji lekarza specjalisty z zakresu balneoklimatologii i medycyny fizykalnej, jak i z pełnej gamy zabiegów mających za zadanie przywrócić Państwu sprawność fizyczną. Wykonujemy zabiegi z zakresu: <i>elektroterapii, wodolecznicznictwa, krioterapii, światłolecznictwa, magnetoterapii, laseroterapii , masażu i kinezyterapii</i>.
             </p>
         </div>
-        <img className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" aboutUsImage />
+        <img className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" />
         </div>
 
     </section>
