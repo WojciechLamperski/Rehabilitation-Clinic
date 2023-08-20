@@ -1,4 +1,4 @@
-import HeadContent from "./components/HeadContent/headContent"
+import HeadContent from "@/components/HeadContent/headContent"
 
 export default function Head(){
     return(
