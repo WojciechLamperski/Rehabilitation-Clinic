@@ -1,54 +1,56 @@
+import Link from "next/link"
+
 export default function Header(){
     return(
 
           <header className="header">
             <div className="header--container container">
       
-              <a className="header__logo logo " href="/">
+              <Link className="header__logo logo " href="/">
                 <img className="logo__img" src="/img/logo/logo.png" />
-              </a>
+              </Link>
       
               <nav className="header__menu menu" id="menu">
       
                 <ul className="menu__list">
                   <li className="menu__item">
-                    <a href="/zabiegi" className="menu__link">
+                    <Link href="/zabiegi" className="menu__link">
                       Zabiegi
-                    </a>
+                    </Link>
                   </li>
       
                   <li className="menu__item">
-                    <a href="/cennik" className="menu__link">
+                    <Link href="/cennik" className="menu__link">
                       Cennik
-                    </a>
+                    </Link>
                   </li>
       
                   <li className="menu__item">                   
-                    <a href="/rehabilitacje" className="menu__link">
+                    <Link href="/rehabilitacje" className="menu__link">
                       Rehabilitacje
-                    </a>
+                    </Link>
                   </li>
       
       
                   <li className="menu__item">                   
-                    <a href="/zespol" className="menu__link">
+                    <Link href="/zespol" className="menu__link">
                       Nasz Zespół
-                    </a>
+                    </Link>
                   </li>
       
       
       
                   <li className="menu__item"> 
-                    <a href="/galeria" className="menu__link">
+                    <Link href="/galeria" className="menu__link">
                       Galeria
-                    </a>
+                    </Link>
                   </li>
       
       
                   <li className="menu__item"> 
-                    <a href="/kontakt" className="menu__link">
+                    <Link href="/kontakt" className="menu__link">
                       Kontakt
-                    </a>
+                    </Link>
                   </li>
       
                 </ul>
