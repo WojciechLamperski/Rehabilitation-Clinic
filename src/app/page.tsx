@@ -133,7 +133,7 @@ export default function Home() {
 
     </section>
 
-    <section className="about">
+    <section className="preperation main__section main__section--margins">
 
         <div className="card__container">
         <div className="card--horizontal card">
