@@ -11,26 +11,26 @@ export default function Header(){
               <nav className="header__menu menu" id="menu">
       
                 <ul className="menu__list">
-                  <li>
+                  <li className="menu__item">
                     <a href="/zabiegi" className="menu__link">
                       Zabiegi
                     </a>
                   </li>
       
-                  <li>
+                  <li className="menu__item">
                     <a href="/cennik" className="menu__link">
                       Cennik
                     </a>
                   </li>
       
-                  <li>                   
+                  <li className="menu__item">                   
                     <a href="/rehabilitacje" className="menu__link">
                       Rehabilitacje
                     </a>
                   </li>
       
       
-                  <li>                   
+                  <li className="menu__item">                   
                     <a href="/zespol" className="menu__link">
                       Nasz Zespół
                     </a>
@@ -38,14 +38,14 @@ export default function Header(){
       
       
       
-                  <li> 
+                  <li className="menu__item"> 
                     <a href="/galeria" className="menu__link">
                       Galeria
                     </a>
                   </li>
       
       
-                  <li> 
+                  <li className="menu__item"> 
                     <a href="/kontakt" className="menu__link">
                       Kontakt
                     </a>
