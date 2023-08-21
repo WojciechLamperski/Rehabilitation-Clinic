@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation'
 import Link from "next/link"
 
-export default function TextLink({siteName, url}){
+export default function PageTitle({siteName, url}){
 
     const pathname = usePathname();
     const title = `${siteName.charAt(0).toUpperCase() + siteName.slice(1)}`;
