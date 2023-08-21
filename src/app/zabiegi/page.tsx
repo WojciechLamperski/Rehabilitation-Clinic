@@ -1,4 +1,14 @@
+'use client'
+import React from "react";
+import {Accordion, AccordionItem} from "@nextui-org/accordion";
+
 export default function Treatments(){
+
+
+    // console.log(inputRef)
+
+    const defaultContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
 
     return(
         <>
@@ -11,13 +21,24 @@ export default function Treatments(){
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
                 </p>
                 </div>
-                <img className="card__img" alt="pacjentka z lekarką uśmiechające się." src="img/treatments/patient.jpg" aboutUsImage />
+                <img className="card__img" alt="pacjentka z lekarką uśmiechające się." src="img/treatments/patient.jpg" />
             </div>
 
         </section>
 
-        <section className="treatments">
+        <Accordion variant="splitted">
+            <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+            {defaultContent}
+            </AccordionItem>
+            <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+            {defaultContent}
+            </AccordionItem>
+            <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+            {defaultContent}
+            </AccordionItem>
+        </Accordion>
 
+        <section className="treatments">
             <div className="container container--treatments accordion-container">
 
                 <div className="ac card card--white">
@@ -105,9 +126,6 @@ export default function Treatments(){
 
         </section>
 
-        {/* <script>
-        new Accordion('.accordion-container');
-        </script> */}
         </>
     )
 }
