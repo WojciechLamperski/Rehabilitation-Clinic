@@ -24,15 +24,15 @@ export default function Home() {
           <div className="carousel__desc">
               Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
           </div>
-          <a href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
+          <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
               Zobacz opis zabiegów
-          </a>
+          </Link>
           </div>
 
       </div>
       </div>
 
-      <div className="carousel__slide carousel__slide--2">
+      <div className={index===0 ? "carousel__slide carousel__slide--2 carousel__slide--data-activ" : "carousel__slide carousel__slide--2"}>
 
       <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/masage3.jpg" />
 
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="carousel__slide carousel__slide--3">
+      <div className={index===0 ? "carousel__slide carousel__slide--3 carousel__slide--data-activ" : "carousel__slide carousel__slide--3"}>
 
       <img className="carousel__img carousel__img--3" alt="kobieta wykonująca masaż ręki dla klientki" src="/img/home/clinic-hand2.jpg" />
 
@@ -72,13 +72,13 @@ export default function Home() {
       </div>
       </div>
 
-      <button className="carousel__nav carousel__nav--right" data-carousel-button="next">
+      <button onClick={()=>{}} className="carousel__nav carousel__nav--right" data-carousel-button="next">
       <svg className="carousel__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
           <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
       </svg>
 
       </button>
-      <button className="carousel__nav carousel__nav--left" data-carousel-button="prev">
+      <button onClick={()=>{}} className="carousel__nav carousel__nav--left" data-carousel-button="prev">
       <svg className="carousel__svg carousel__svg--left" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
           <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
       </svg>
