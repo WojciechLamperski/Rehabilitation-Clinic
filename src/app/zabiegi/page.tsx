@@ -1,4 +1,18 @@
+'use client'
+import Accordion from 'accordion-js';
+import { useRef, useEffect } from 'react';
+import 'accordion-js/dist/accordion.min.css';
+
 export default function Treatments(){
+
+    const ref = useRef(null);
+    useEffect(()=>{
+        if(ref.current!==null){
+            const accordion = new Accordion(ref.current);
+        }
+        console.log(ref) 
+    }, [])
+
     return(
         <>
         <section className="preperation main__section main__section--margins">
@@ -16,7 +30,7 @@ export default function Treatments(){
         </section>
 
         <section className="treatments">
-            <div className="container container--treatments accordion-container">
+            <div className="container container--treatments accordion-container" ref={ref}>
 
                 <div className="ac card card--white">
                 <h2 className="services__title services__title--treatments">
@@ -102,6 +116,8 @@ export default function Treatments(){
             </div>
 
         </section>
+
+       
 
         </>
     )
