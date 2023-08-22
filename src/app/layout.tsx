@@ -6,10 +6,10 @@ import Footer from '@/components/Footer/Footer'
 import { Ubuntu } from 'next/font/google'
 
 
-const roboto = Ubuntu({
+const ubuntu = Ubuntu({
   weight: ['400', '500', '700'],
   style: ['normal', 'italic'],
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
 })
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         
         <head />
         {/* <body className={inter.className}></body> */}
-        <body id="body"  className={roboto.className} >
+        <body id="body"  className={ubuntu.className} >
         <div id="page-wrapper">
           < Header />
           <main className="main">
