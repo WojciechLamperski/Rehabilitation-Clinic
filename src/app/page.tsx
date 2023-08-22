@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       </div>
 
-      <div className={index===0 ? "carousel__slide carousel__slide--2 carousel__slide--data-activ" : "carousel__slide carousel__slide--2"}>
+      <div className={index===1 ? "carousel__slide carousel__slide--2 carousel__slide--data-activ" : "carousel__slide carousel__slide--2"}>
 
       <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/masage3.jpg" />
 
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
       </div>
 
-      <div className={index===0 ? "carousel__slide carousel__slide--3 carousel__slide--data-activ" : "carousel__slide carousel__slide--3"}>
+      <div className={index===2 ? "carousel__slide carousel__slide--3 carousel__slide--data-activ" : "carousel__slide carousel__slide--3"}>
 
       <img className="carousel__img carousel__img--3" alt="kobieta wykonująca masaż ręki dla klientki" src="/img/home/clinic-hand2.jpg" />
 
