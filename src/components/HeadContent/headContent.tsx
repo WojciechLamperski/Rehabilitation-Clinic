@@ -12,8 +12,6 @@ export default function HeadContent(){
             <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <meta  name="theme-color" content="#405040"></meta>
-            <link rel="stylesheet" href="css/style.css" />
-            <script src="js/header-hamburger.js" defer></script>
         </>
     )
 }

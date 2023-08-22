@@ -1,17 +1,29 @@
 'use client'
-import Accordion from 'accordion-js';
 import { useRef, useEffect } from 'react';
 import 'accordion-js/dist/accordion.min.css';
 
 export default function Treatments(){
-
+    
     const ref = useRef(null);
-    useEffect(()=>{
-        if(ref.current!==null){
-            const accordion = new Accordion(ref.current);
-        }
-        console.log(ref) 
-    }, [])
+
+    useEffect(() => {
+        import('accordion-js')
+          .then(module => {
+
+            const Accordion = module.default;
+
+            if(ref.current!==null){
+                const accordion = new Accordion(ref.current);
+            }
+            console.log(Accordion) 
+            console.log(ref) 
+          })
+          .catch(error => {
+            console.error('Error importing client-side file:', error);
+          });
+
+      }, []);
+    
 
     return(
         <>
