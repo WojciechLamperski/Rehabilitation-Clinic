@@ -1,4 +1,5 @@
 export default function Gallery(){
+
     return(
         <section className="team main__section main__section--margins">
             <div className="gallery__wrapper">

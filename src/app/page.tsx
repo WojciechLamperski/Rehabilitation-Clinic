@@ -1,11 +1,16 @@
+'use client'
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Home() {
+
+    const [index, setIndex] = useState(0);
+    
   return (
    <>
     <section className="carousel main__banner" id="data-carousel">
 
-      <div className="carousel__slide carousel__slide--1">
+      <div className={index===0 ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
 
       <img className="carousel__img carousel__img--1" alt="lekarz w okularach uśmiechający się i spoglądający w stronę ekranu" src="/img/home/doctor_standing.jpg" />
 
