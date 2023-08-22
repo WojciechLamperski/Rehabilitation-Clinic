@@ -17,7 +17,7 @@ export default function Home() {
       <div className="carousel__overlay"></div>
 
       <div className="carousel__jumbotron jumbotron carousel__jumbotron--overlay">
-          <div className="jumbotron__wrapper">
+          <div className={index===0 ? "jumbotron__wrapper inAnimation" : "jumbotron__wrapper"}>
           <div className="carousel__title">
               W NZOZ rehabilitacja majowe oferujemy:
           </div>
