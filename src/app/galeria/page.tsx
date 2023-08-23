@@ -1,9 +1,18 @@
+'use client'
+import { useState } from "react"
+
 export default function Gallery(){
+
+    const [popupVisible, setPopupVisible] = useState(false);
+    const [visibleImage, setVisibleImage] = useState(0);
 
     return(
         <section className="team main__section main__section--margins">
             <div className="gallery__wrapper">
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(1);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/1.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg gallery__svg-overlay" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -11,7 +20,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(1);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/2.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -19,7 +31,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(2);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/3.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -27,7 +42,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(3);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/4.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -35,7 +53,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(4);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/5.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -43,7 +64,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(5);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/6.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -51,7 +75,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(6);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/7.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -59,7 +86,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(7);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/8.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -67,7 +97,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(8);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/9.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -75,7 +108,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(9);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/10.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -83,7 +119,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(10);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/11.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -91,7 +130,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(11);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/12.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -99,7 +141,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(12);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/13.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -107,7 +152,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(13);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/14.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -115,7 +163,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(14);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/15.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -123,7 +174,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(15);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/16.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -131,7 +185,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(16);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/17.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -139,7 +196,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(17);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/18.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -147,7 +207,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(18);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/19.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -155,7 +218,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(19);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/20.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -163,7 +229,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(20);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/21.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -171,7 +240,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(21);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/22.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -179,7 +251,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(22);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/23.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -187,7 +262,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(23);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/24.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -195,7 +273,10 @@ export default function Gallery(){
                     </svg>
                 </div>
                 </div>
-                <div className="gallery__card">
+                <div className="gallery__card" onClick={()=>{
+                    setVisibleImage(24);
+                    setPopupVisible(true);
+                }}>
                 <img src="img/gallery/25.jpg" alt="" className="gallery__image" />
                 <div tabIndex="0" className="gallery__overlay js-thumbnail">
                     <svg className="gallery__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -204,13 +285,13 @@ export default function Gallery(){
                 </div>
                 </div>
             </div>
-            <div className="popup hidden" id="js-popup">
-                <button className="popup__button popup__button--close" id="js-popup-close">
+            <div className={popupVisible ? "popup" : "popup hidden"} id="js-popup">
+                <button className="popup__button popup__button--close" id="js-popup-close" onClick={()=>{setPopupVisible(false)}}>
                 <svg className="popup__svg" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
                     <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
                 </svg>
                 </button>
-                <img src="" alt="" className="popup__img" id="js-popup-img" />
+                <img src={`img/gallery/${visibleImage}.jpg`} className="popup__img" id="js-popup-img" />
 
                 <button className="popup__button popup__button--arrow popup__button--arrow-right" id="js-popup-arrow--right">
                 <svg className="popup__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
