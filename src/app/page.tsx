@@ -12,45 +12,26 @@ export default function Home() {
     <section className="carousel main__banner" id="data-carousel">
     
         <Slide index={index} indexNumber={0} />
+        <Slide index={index} indexNumber={1} whitesmoke={true} />
+        <Slide index={index} indexNumber={2} />
 
-      <div className={index===1 ? "carousel__slide carousel__slide--2 carousel__slide--data-activ" : "carousel__slide carousel__slide--2"}>
+        <button onClick={()=>{index===2 ? setIndex(0) : setIndex(index+1)}} className="carousel__nav carousel__nav--right" data-carousel-button="next">
+        <svg className="carousel__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
+            <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
+        </svg>
 
-      <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/1.jpg" />
-
-      <div className="carousel__jumbotron jumbotron">
-          <div className={index===1 ? "jumbotron__wrapper jumbotron__wrapper--whitesmoke inAnimation" : "jumbotron__wrapper jumbotron__wrapper--whitesmoke"}>
-          <div className="carousel__title">
-              W naszej przychodni znajdą Państwo:
-          </div>
-          <div className="carousel__desc">
-              Szeroką gamę zabiegów mających za zadanie przywrócenie Państwu sprawności fizycznej.
-          </div>
-          <a href="/cennik" className="btn carousel__btn carousel__btn--pink" tabIndex="-1">
-              Poznaj naszą ofertę
-          </a>
-          </div>
-      </div>
-      </div>
-
-      <Slide index={index} indexNumber={2} />
-
-      <button onClick={()=>{index===2 ? setIndex(0) : setIndex(index+1)}} className="carousel__nav carousel__nav--right" data-carousel-button="next">
-      <svg className="carousel__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
-          <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
-      </svg>
-
-      </button>
-      <button onClick={()=>{index===0 ? setIndex(2) : setIndex(index-1)}} className="carousel__nav carousel__nav--left" data-carousel-button="prev">
-      <svg className="carousel__svg carousel__svg--left" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
-          <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
-      </svg>
-      </button>
+        </button>
+        <button onClick={()=>{index===0 ? setIndex(2) : setIndex(index-1)}} className="carousel__nav carousel__nav--left" data-carousel-button="prev">
+        <svg className="carousel__svg carousel__svg--left" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
+            <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
+        </svg>
+        </button>
 
     </section>
 
     <section className="services">
 
-      <div className="services--container container">
+        <div className="services--container container">
 
         <Link href="/zabiegi" className="services__card card card--white card--shadow">
             <div className="services__top services__top--circle services__top--circle1">
@@ -95,7 +76,7 @@ export default function Home() {
             </div>
         </Link>
 
-      </div>
+        </div>
 
     </section>
 

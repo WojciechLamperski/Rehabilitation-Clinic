@@ -1,6 +1,7 @@
 import Link from "next/link"
 
-export default function Slide({indexNumber, index}){
+export default function Slide({indexNumber, index, whitesmoke}){
+
     return(
         <div className={index===indexNumber ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
 
@@ -9,7 +10,7 @@ export default function Slide({indexNumber, index}){
             <div className="carousel__overlay"></div>
 
             <div className="carousel__jumbotron jumbotron carousel__jumbotron--overlay">
-                <div className={index===indexNumber ? "jumbotron__wrapper inAnimation" : "jumbotron__wrapper"}>
+                <div className={index===indexNumber ? `jumbotron__wrapper inAnimation ${whitesmoke && "jumbotron__wrapper--whitesmoke"}` : `jumbotron__wrapper ${whitesmoke && "jumbotron__wrapper--whitesmoke"}`}>
                 <div className="carousel__title">
                     W NZOZ rehabilitacja majowe oferujemy:
                 </div>
