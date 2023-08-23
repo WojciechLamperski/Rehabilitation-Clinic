@@ -1394,9 +1394,31 @@ body {
   height: 100%;
 }
 
+.footer__link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
 .footer__paragraph {
   font-size: var(--small);
   margin-bottom: 16px;
+}
+
+.footer__svg{
+  padding-top: 6px;
+}
+
+.footer__paragraph--wojtek {
+  margin-top: 10px;
+}
+
+.footer__paragraph--wojtek b {
+  font-style: normal;
+  margin-left: 3px;
 }
 
 .footer__paragraph--title {
