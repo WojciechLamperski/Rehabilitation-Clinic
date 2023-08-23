@@ -10,31 +10,9 @@ export default function Gallery(){
     return(
         <section className="team main__section main__section--margins">
             <div className="gallery__wrapper">
-                <GalleryCard imageNumber={1} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={2} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={3} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={4} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={5} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={6} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={7} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={8} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={9} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={10} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={11} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={12} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={13} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={14} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={15} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={16} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={17} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={18} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={19} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={20} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={21} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={22} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={23} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={24} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
-                <GalleryCard imageNumber={25} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
+                {[...Array(25)].map((x, i) =>
+                    <GalleryCard imageNumber={i+1} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
+                )}
             </div>
             <div className={popupVisible ? "popup" : "popup hidden"} id="js-popup">
                 <button className="popup__button popup__button--close" id="js-popup-close" onClick={()=>{setPopupVisible(false)}}>
