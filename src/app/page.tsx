@@ -37,7 +37,7 @@ export default function Home() {
       <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/masage3.jpg" />
 
       <div className="carousel__jumbotron jumbotron">
-          <div className="jumbotron__wrapper jumbotron__wrapper--whitesmoke">
+          <div className={index===1 ? "jumbotron__wrapper jumbotron__wrapper--whitesmoke inAnimation" : "jumbotron__wrapper jumbotron__wrapper--whitesmoke"}>
           <div className="carousel__title">
               W naszej przychodni znajdą Państwo:
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
       <div className="carousel__overlay"></div>
 
       <div className="carousel__jumbotron">
-          <div className="jumbotron__wrapper">
+          <div className={index===2 ? "jumbotron__wrapper inAnimation" : "jumbotron__wrapper"}>
           <div className="carousel__title">
               Zapraszamy Państwa do kontaktu!
           </div>
