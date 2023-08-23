@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import GalleryCard from "./galleryCard";
+import GalleryCard from "../../components/GalleryCard/galleryCard";
 
 export default function Gallery(){
 

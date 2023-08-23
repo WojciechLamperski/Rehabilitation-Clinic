@@ -1,6 +1,7 @@
 'use client'
-import Link from "next/link"
 import { useState } from "react"
+import Link from "next/link"
+import Slide from "@/components/Slider/slide";
 
 export default function Home() {
 
@@ -9,32 +10,12 @@ export default function Home() {
   return (
    <>
     <section className="carousel main__banner" id="data-carousel">
-
-      <div className={index===0 ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
-
-      <img className="carousel__img carousel__img--1" alt="lekarz w okularach uśmiechający się i spoglądający w stronę ekranu" src="/img/home/doctor_standing.jpg" />
-
-      <div className="carousel__overlay"></div>
-
-      <div className="carousel__jumbotron jumbotron carousel__jumbotron--overlay">
-          <div className={index===0 ? "jumbotron__wrapper inAnimation" : "jumbotron__wrapper"}>
-          <div className="carousel__title">
-              W NZOZ rehabilitacja majowe oferujemy:
-          </div>
-          <div className="carousel__desc">
-              Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
-          </div>
-          <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
-              Zobacz opis zabiegów
-          </Link>
-          </div>
-
-      </div>
-      </div>
+    
+        <Slide index={index} indexNumber={0} />
 
       <div className={index===1 ? "carousel__slide carousel__slide--2 carousel__slide--data-activ" : "carousel__slide carousel__slide--2"}>
 
-      <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/masage3.jpg" />
+      <img className="carousel__img carousel__img--2" alt="kobieta będąca w trakcie sesji chiropraktycznej (widoczna jest jej głowa oraz ręce osoby wykonującej zabieg)" src="/img/home/1.jpg" />
 
       <div className="carousel__jumbotron jumbotron">
           <div className={index===1 ? "jumbotron__wrapper jumbotron__wrapper--whitesmoke inAnimation" : "jumbotron__wrapper jumbotron__wrapper--whitesmoke"}>
@@ -51,26 +32,7 @@ export default function Home() {
       </div>
       </div>
 
-      <div className={index===2 ? "carousel__slide carousel__slide--3 carousel__slide--data-activ" : "carousel__slide carousel__slide--3"}>
-
-      <img className="carousel__img carousel__img--3" alt="kobieta wykonująca masaż ręki dla klientki" src="/img/home/clinic-hand2.jpg" />
-
-      <div className="carousel__overlay"></div>
-
-      <div className="carousel__jumbotron">
-          <div className={index===2 ? "jumbotron__wrapper inAnimation" : "jumbotron__wrapper"}>
-          <div className="carousel__title">
-              Zapraszamy Państwa do kontaktu!
-          </div>
-          <div className="carousel__desc">
-              Telefonicznie, lub z umówieniem na miejscu
-          </div>
-          <a href="/kontakt" className="btn carousel__btn carousel__btn--lightGreen" tabIndex="-1">
-              Zobacz dane kontaktowe
-          </a>
-          </div>
-      </div>
-      </div>
+      <Slide index={index} indexNumber={2} />
 
       <button onClick={()=>{index===2 ? setIndex(0) : setIndex(index+1)}} className="carousel__nav carousel__nav--right" data-carousel-button="next">
       <svg className="carousel__svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="22.8">
