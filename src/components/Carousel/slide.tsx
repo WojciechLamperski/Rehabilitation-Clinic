@@ -1,5 +1,4 @@
 import Link from "next/link"
-
 export default function Slide({indexNumber, index, whitesmoke}){
 
     return(
