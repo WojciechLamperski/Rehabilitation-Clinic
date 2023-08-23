@@ -1,10 +1,7 @@
 import Link from "next/link"
 import Carousel from "@/components/Carousel/carousel";
 
-export default function Home() {
-
-    
-    
+export default function Home() {    
   return (
    <>
     <Carousel />
