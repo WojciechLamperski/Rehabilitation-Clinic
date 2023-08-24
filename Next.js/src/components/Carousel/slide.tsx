@@ -1,5 +1,4 @@
-import Link from "next/link"
-export default function Slide({indexNumber, index, whitesmoke}){
+export default function Slide({indexNumber, index, whitesmoke, children}){
 
     return(
         <div className={index===indexNumber ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
@@ -10,15 +9,16 @@ export default function Slide({indexNumber, index, whitesmoke}){
 
             <div className="carousel__jumbotron jumbotron carousel__jumbotron--overlay">
                 <div className={index===indexNumber ? `jumbotron__wrapper inAnimation ${whitesmoke && "jumbotron__wrapper--whitesmoke"}` : `jumbotron__wrapper ${whitesmoke && "jumbotron__wrapper--whitesmoke"}`}>
-                <div className="carousel__title">
-                    W NZOZ rehabilitacja majowe oferujemy:
-                </div>
-                <div className="carousel__desc">
-                    Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
-                </div>
-                <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
-                    Zobacz opis zabiegów
-                </Link>
+                    {/* <div className="carousel__title">
+                        W NZOZ rehabilitacja majowe oferujemy:
+                    </div>
+                    <div className="carousel__desc">
+                        Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
+                    </div>
+                    <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
+                        Zobacz opis zabiegów
+                    </Link> */}
+                    {children}
                 </div>
 
             </div>
