@@ -846,7 +846,7 @@ body {
 .card__desc {
   line-height: 1.9;
   text-align: justify;
-  margin-right: 30px;
+  margin-right: 27px;
   font-size: var(--small);
   margin-left: 3px;
 }
@@ -1488,7 +1488,12 @@ body {
   }
 }
 
+.card__desc--no-margins{
+  margin-right: 0;
+}
+
 .rehab__title{
+  margin-left: -7px;
   margin-bottom: 14px;
   display: flex;
   align-items: center;
@@ -1507,10 +1512,30 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .treatments__svg,
   .rehab__svg{
     display: none;
   }
+
+  .treatments--title{
+    margin-left: 0
+  }
+  
   .main__section--rehab{
     width: 90%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.card--treatments{
+  display: flex;
+  align-items: center;
+}
+
+.treatments__svg{
+  margin-right: 6px;
+}
+
+.treatments--title{
+  margin-left: -7px;
+}
+/*# sourceMappingURL=style.css.map */
