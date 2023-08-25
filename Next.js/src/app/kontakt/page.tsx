@@ -3,7 +3,6 @@ export default async function Contact(){
     const res = await fetch("http://172.28.64.1:1337/api/contacts");
     const json = await res.json();
     const contact = json.data[0].attributes;
-    console.log(contact)
     const phone1 = contact.phone1;
     const phone2 = contact.phone2;
     const email = contact.email;

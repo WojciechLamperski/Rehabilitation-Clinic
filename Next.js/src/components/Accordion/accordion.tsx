@@ -6,7 +6,6 @@ import ReactMarkdown from "react-markdown";
 export default function Accordion({treatments}){
 
     const [array, setArray] = useState(treatments)
-    console.log(array);
 
     const ref = useRef(null);
 
