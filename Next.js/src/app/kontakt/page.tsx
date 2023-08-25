@@ -1,13 +1,26 @@
+import ReactMarkdown from "react-markdown";
+
 export default async function Contact(){
 
-    const res = await fetch("http://172.28.64.1:1337/api/contacts");
-    const json = await res.json();
-    const contact = json.data[0].attributes;
+    const resContact = await fetch("http://172.28.64.1:1337/api/contacts");
+    const jsonContact = await resContact.json();
+    const contact = jsonContact.data[0].attributes;
     const phone1 = contact.phone1;
     const phone2 = contact.phone2;
     const email = contact.email;
     const location = contact.location;
     const postcode = contact.postcode;
+
+    const resOpening = await fetch("http://172.28.64.1:1337/api/opening");
+    const jsonOpening = await resOpening.json();
+    const opening = jsonOpening.data.attributes;
+
+    const resReservationHrs = await fetch("http://172.28.64.1:1337/api/reservation-hrs");
+    const jsonReservationHrs = await resReservationHrs.json();
+    const reservationHrs = jsonReservationHrs.data;
+
+    console.log(reservationHrs);
+    
 
     return (
         <section className="contact main__section main__section--margins">
@@ -54,10 +67,9 @@ export default async function Contact(){
                             <svg className="svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
                             <path d="m627 769 45-45-159-160V363h-60v225l174 181ZM480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-82 31.5-155t86-127.5Q252 239 325 207.5T480 176q82 0 155 31.5t127.5 86Q817 348 848.5 421T880 576q0 82-31.5 155t-86 127.5Q708 913 635 944.5T480 976Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480 236q-140 0-240 100T140 576q0 140 100 240t240 100Z" />
                             </svg>
-                            <p className="contact__pargraph">
-                            pn, śr, pt: 8:00 - 18:00 <br />
-                            wt, czw: 8:00 - 19:00
-                            </p>
+                            <ReactMarkdown className="contact__pargraph">
+                                {opening.body}
+                            </ReactMarkdown>
 
                         </li>
                         </ul>
@@ -72,26 +84,16 @@ export default async function Contact(){
                             </span>
                         </caption>
                         <tbody className="table__body">
-                            <tr className="table__row">
-                            <td className="table__cell" data-label="Day">pn</td>
-                            <td className="table__cell" data-label="Time">8:00 - 15:00</td>
-                            </tr>
-                            <tr className="table__row">
-                            <td className="table__cell" scope="row" data-label="Day">wt</td>
-                            <td className="table__cell" data-label="Time">11:00 - 18:00</td>
-                            </tr>
-                            <tr className="table__row">
-                            <td className="table__cell" scope="row" data-label="Day">śr</td>
-                            <td className="table__cell" data-label="Time">8:00 - 15:00</td>
-                            </tr>
-                            <tr className="table__row">
-                            <td className="table__cell" scope="row" data-label="Day">czw</td>
-                            <td className="table__cell" data-label="Time">11:00 - 18:00</td>
-                            </tr>
-                            <tr className="table__row">
-                            <td className="table__cell" scope="row" data-label="Day">pt</td>
-                            <td className="table__cell" data-label="Time">8:00 - 15:00</td>
-                            </tr>
+
+                            {reservationHrs.map((reservationHr)=>{
+                                return(
+                                    <tr className="table__row">
+                                        <td className="table__cell" data-label="Day">{reservationHr.attributes.day}</td>
+                                        <td className="table__cell" data-label="Time">{reservationHr.attributes.time}</td>
+                                    </tr>
+                                )
+                            })}
+
                         </tbody>
                         </table>
                     </div>

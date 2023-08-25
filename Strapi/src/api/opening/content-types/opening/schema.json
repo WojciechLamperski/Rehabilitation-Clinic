@@ -1,21 +1,19 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "openings",
   "info": {
     "singularName": "opening",
     "pluralName": "openings",
-    "displayName": "Opening"
+    "displayName": "Opening",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "day": {
-      "type": "string"
-    },
-    "hrs": {
-      "type": "string"
+    "body": {
+      "type": "richtext"
     }
   }
 }
