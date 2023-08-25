@@ -1501,6 +1501,7 @@ body {
 
 .rehab__svg{
   margin-right: 6px;
+  fill: var(--fontDarkGreen);
 }
 
 @media (max-width: 1170px){
@@ -1520,7 +1521,7 @@ body {
   .treatments--title{
     margin-left: 0
   }
-  
+
   .main__section--rehab{
     width: 90%;
   }
@@ -1533,6 +1534,7 @@ body {
 
 .treatments__svg{
   margin-right: 6px;
+  fill: var(--fontDarkGreen);
 }
 
 .treatments--title{
