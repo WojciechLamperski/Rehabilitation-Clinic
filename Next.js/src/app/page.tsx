@@ -6,7 +6,7 @@ export default async function Home() {
 
     const res = await fetch("http://172.28.64.1:1337/api/about");
     const about = await res.json();
-    const aboutBody = about.data.attributes.about;
+    const aboutBody = about.data.attributes.body;
     
     return (
         <>
