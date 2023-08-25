@@ -374,6 +374,11 @@ body {
 }
 
 .main__section--margins {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.main__section--small-margins {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -839,7 +844,7 @@ body {
 }
 
 .card__desc {
-  line-height: 2;
+  line-height: 1.9;
   text-align: justify;
   margin-right: 30px;
   font-size: var(--small);
@@ -991,7 +996,7 @@ body {
 .table__caption {
   font-size: var(--medium);
   margin-top: 2px !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 12px !important;
 }
 
 .table__row {
@@ -1480,4 +1485,8 @@ body {
     align-items: center;
     margin-bottom: 0px;
   }
+}
+
+.rehab__title{
+  margin-bottom: 14px;
 }/*# sourceMappingURL=style.css.map */

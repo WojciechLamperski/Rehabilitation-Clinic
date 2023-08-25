@@ -63,7 +63,7 @@ export default async function Home() {
 
             </section>
 
-            <section className="main__section main__section--margins">
+            <section className="main__section main__section--small-margins">
 
                 <div className="card__container">
                 <div className="card--horizontal card">
