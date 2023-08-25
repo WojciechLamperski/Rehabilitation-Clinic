@@ -18,8 +18,6 @@ export default async function Contact(){
     const resReservationHrs = await fetch("http://172.28.64.1:1337/api/reservation-hrs");
     const jsonReservationHrs = await resReservationHrs.json();
     const reservationHrs = jsonReservationHrs.data;
-
-    console.log(reservationHrs);
     
 
     return (
@@ -37,8 +35,8 @@ export default async function Contact(){
                             <path d="M776 569q-5-121-89-205t-205-89v-60q72 2 135.5 30.5T729 322q48 48 76.5 111.5T836 569h-60Zm-169 0q-5-50-40-84.5T482 445v-60q75 5 127.5 57T667 569h-60Zm188 367q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z" />
                             </svg>
                             <p className="contact__pargraph">
-                            <a className="contact__link contact__link--top unsetLink" href="tel:+48914643945">(+48){phone1}</a>
-                            <a className="contact__link contact__link--bottom unsetLink" href="tel:+48914600369">(+48){phone2}</a>
+                            <a className="contact__link contact__link--top unsetLink" href={`tel:+48${phone1}`}>(+48){phone1}</a>
+                            <a className="contact__link contact__link--bottom unsetLink" href={`tel:+48${phone2}`}>(+48){phone2}</a>
                             </p>
 
                         </li>
@@ -57,7 +55,7 @@ export default async function Contact(){
                             <path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z" />
                             </svg>
                             <p className="contact__pargraph">
-                            <a className="contact__link" href="mailto:poradnia@rehabilitacja-majowe.pl">
+                            <a className="contact__link" href={email}>
                                 {email}
                             </a>
                             </p>

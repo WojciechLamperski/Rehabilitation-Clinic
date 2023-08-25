@@ -1490,4 +1490,27 @@ body {
 
 .rehab__title{
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.rehab__svg{
+  margin-right: 6px;
+}
+
+@media (max-width: 1170px){
+  .main__section--rehab{
+    width: 90%;
+  }
+  .rehab__title{
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .rehab__svg{
+    display: none;
+  }
+  .main__section--rehab{
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
