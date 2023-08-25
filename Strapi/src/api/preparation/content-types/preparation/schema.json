@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "preparations",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": ""
+    "singularName": "preparation",
+    "pluralName": "preparations",
+    "displayName": "Preparation"
   },
   "options": {
     "draftAndPublish": true
@@ -14,9 +13,6 @@
   "attributes": {
     "body": {
       "type": "richtext"
-    },
-    "name": {
-      "type": "string"
     }
   }
 }

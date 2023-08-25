@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "treatments",
+  "collectionName": "rehabs",
   "info": {
-    "singularName": "treatment",
-    "pluralName": "treatments",
-    "displayName": "Treatment",
+    "singularName": "rehab",
+    "pluralName": "rehabs",
+    "displayName": "Rehab",
     "description": ""
   },
   "options": {
@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "body": {
       "type": "richtext"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "treatments",
+  "collectionName": "offers",
   "info": {
-    "singularName": "treatment",
-    "pluralName": "treatments",
-    "displayName": "Treatment",
-    "description": ""
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer"
   },
   "options": {
     "draftAndPublish": true
