@@ -1,4 +1,15 @@
-export default function Contact(){
+export default async function Contact(){
+
+    const res = await fetch("http://172.28.64.1:1337/api/contacts");
+    const json = await res.json();
+    const contact = json.data[0].attributes;
+    console.log(contact)
+    const phone1 = contact.phone1;
+    const phone2 = contact.phone2;
+    const email = contact.email;
+    const location = contact.location;
+    const postcode = contact.postcode;
+
     return (
         <section className="contact main__section main__section--margins">
             <div className="contact__wrapper">
@@ -14,8 +25,8 @@ export default function Contact(){
                             <path d="M776 569q-5-121-89-205t-205-89v-60q72 2 135.5 30.5T729 322q48 48 76.5 111.5T836 569h-60Zm-169 0q-5-50-40-84.5T482 445v-60q75 5 127.5 57T667 569h-60Zm188 367q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z" />
                             </svg>
                             <p className="contact__pargraph">
-                            <a className="contact__link contact__link--top unsetLink" href="tel:+48914643945">(+48)914643945</a>
-                            <a className="contact__link contact__link--bottom unsetLink" href="tel:+48914600369">(+48)914600369</a>
+                            <a className="contact__link contact__link--top unsetLink" href="tel:+48914643945">(+48){phone1}</a>
+                            <a className="contact__link contact__link--bottom unsetLink" href="tel:+48914600369">(+48){phone2}</a>
                             </p>
 
                         </li>
@@ -24,8 +35,8 @@ export default function Contact(){
                             <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z" />
                             </svg>
                             <p className="contact__pargraph">
-                            Jarosława Iwaszkiewicza 89 <br />
-                            70-786 Szczecin
+                            {location} <br />
+                            {postcode}
                             </p>
 
                         </li>
@@ -35,7 +46,7 @@ export default function Contact(){
                             </svg>
                             <p className="contact__pargraph">
                             <a className="contact__link" href="mailto:poradnia@rehabilitacja-majowe.pl">
-                                poradnia@rehabilitacja-majowe.pl
+                                {email}
                             </a>
                             </p>
 
@@ -45,7 +56,8 @@ export default function Contact(){
                             <path d="m627 769 45-45-159-160V363h-60v225l174 181ZM480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-82 31.5-155t86-127.5Q252 239 325 207.5T480 176q82 0 155 31.5t127.5 86Q817 348 848.5 421T880 576q0 82-31.5 155t-86 127.5Q708 913 635 944.5T480 976Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480 236q-140 0-240 100T140 576q0 140 100 240t240 100Z" />
                             </svg>
                             <p className="contact__pargraph">
-                            pn-pt 7:30 - 19:00
+                            pn, śr, pt: 8:00 - 18:00 <br />
+                            wt, czw: 8:00 - 19:00
                             </p>
 
                         </li>
