@@ -32,6 +32,9 @@
     },
     "postcode": {
       "type": "string"
+    },
+    "locationShort": {
+      "type": "string"
     }
   }
 }
