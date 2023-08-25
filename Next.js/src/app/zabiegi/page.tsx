@@ -1,7 +1,13 @@
 import Accordion from "@/components/Accordion/accordion"
 import 'accordion-js/dist/accordion.min.css';
 
-export default function Treatments(){
+export default async function Treatments(){
+
+    const res = await fetch("http://172.28.64.1:1337/api/treatments");
+    const json = await res.json();
+    const treatments = json.data;
+
+    console.log(treatments)
 
     return(
         <>
@@ -20,7 +26,7 @@ export default function Treatments(){
             </section>
 
             <section className="treatments">
-                <Accordion />
+                <Accordion treatments={treatments} />
             </section>
         </>
     )

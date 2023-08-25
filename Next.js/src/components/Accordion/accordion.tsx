@@ -1,8 +1,10 @@
 'use client'
 import Accordion from 'accordion-js';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
-export default function Accordion(){
+export default function Accordion({treatments}){
+
+    const [array, setArray] = useState(treatments)
 
     const ref = useRef(null);
 
