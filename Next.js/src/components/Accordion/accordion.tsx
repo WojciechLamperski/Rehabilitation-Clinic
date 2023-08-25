@@ -32,7 +32,7 @@ export default function Accordion({treatments}){
 
             {array.map((treatment)=>{
                 return(
-                    <div className="ac card card--white">
+                    <div key={treatment.id} className="ac card card--white">
                         <h2 className="services__title services__title--treatments">
                             <button className="ac-trigger">{treatment.attributes.name}</button>
                         </h2>
