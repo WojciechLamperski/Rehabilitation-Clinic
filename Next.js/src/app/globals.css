@@ -848,6 +848,7 @@ body {
   text-align: justify;
   margin-right: 30px;
   font-size: var(--small);
+  margin-left: 3px;
 }
 
 .card__img {
