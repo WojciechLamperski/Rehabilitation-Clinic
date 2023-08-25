@@ -990,7 +990,6 @@ body {
 
 .table__caption {
   font-size: var(--medium);
-  margin: 0.5em 0 0.75em;
   margin-top: 2px !important;
   margin-bottom: 2px !important;
 }
