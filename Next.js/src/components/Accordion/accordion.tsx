@@ -29,7 +29,7 @@ export default function Accordion({treatments}){
     return(
         <div className="container container--treatments accordion-container" ref={ref}>
 
-            {array.map((treatment)=>{
+            {array.map((treatment: {id: string, attributes: {name:string, body: string}})=>{
                 return(
                     <div key={treatment.id} className="ac card card--white">
                         <h2 className="services__title services__title--treatments">

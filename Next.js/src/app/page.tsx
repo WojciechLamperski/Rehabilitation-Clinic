@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Carousel from "@/components/Carousel/carousel";
 import ReactMarkdown from "react-markdown";
-import Image from "next/image";
 
 export default async function Home() {   
 
@@ -74,7 +73,7 @@ export default async function Home() {
                         {about}
                     </ReactMarkdown>
                 </div>
-                <Image className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" />
+                <img className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" />
                 </div>
 
             </section>

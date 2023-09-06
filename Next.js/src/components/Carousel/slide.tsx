@@ -1,11 +1,11 @@
-import Image from "next/image";
 
-export default function Slide({indexNumber, index, whitesmoke, children}){
+
+export default function Slide({indexNumber, index, whitesmoke=false, children}){
 
     return(
         <div className={index===indexNumber ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
 
-            <Image className="carousel__img carousel__img--1" alt="" src={`/img/home/${indexNumber}.jpg`} />
+            <img className="carousel__img carousel__img--1" alt="" src={`/img/home/${indexNumber}.jpg`} />
 
             <div className="carousel__overlay"></div>
 

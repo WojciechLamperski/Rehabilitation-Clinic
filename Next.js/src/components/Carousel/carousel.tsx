@@ -17,7 +17,7 @@ export default function Carousel(){
                 <div className="carousel__desc">
                     Wysoką jakość usług, konsultacji i sprzętu rehabilitacyjnego
                 </div>
-                <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex="-1">
+                <Link href="/zabiegi" className="btn carousel__btn carousel__btn--darkGreen" tabIndex={-1}>
                     Zobacz opis zabiegów
                 </Link>
             </Slide>
@@ -29,7 +29,7 @@ export default function Carousel(){
                 <div className="carousel__desc">
                     Szeroką gamę zabiegów mających za zadanie przywrócenie Państwu sprawności fizycznej.
                 </div>
-                <Link href="/cennik" className="btn carousel__btn carousel__btn--pink" tabIndex="-1">
+                <Link href="/cennik" className="btn carousel__btn carousel__btn--pink" tabIndex={-1}>
                     Poznaj naszą ofertę
                 </Link>
             </Slide>
@@ -41,7 +41,7 @@ export default function Carousel(){
                 <div className="carousel__desc">
                     Telefonicznie, lub z umówieniem na miejscu
                 </div>
-                <Link href="/kontakt" className="btn carousel__btn carousel__btn--lightGreen" tabIndex="-1">
+                <Link href="/kontakt" className="btn carousel__btn carousel__btn--lightGreen" tabIndex={-1}>
                     Zobacz dane kontaktowe
                 </Link>
             </Slide>

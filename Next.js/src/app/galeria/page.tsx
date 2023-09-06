@@ -1,6 +1,5 @@
 'use client'
 import { useState } from "react"
-import Image from "next/image";
 import GalleryCard from "../../components/GalleryCard/galleryCard";
 
 export default function Gallery(){
@@ -21,7 +20,7 @@ export default function Gallery(){
                     <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
                 </svg>
                 </button>
-                <Image alt="a photo of one of our equipments" src={`img/gallery/${visibleImage}.jpg`} className="popup__img" id="js-popup-img" />
+                <img alt="a photo of one of our equipments" src={`img/gallery/${visibleImage}.jpg`} className="popup__img" id="js-popup-img" />
 
                 <button onClick={
                     visibleImage === 25 ? (()=>{setVisibleImage(1)}) : (()=>{setVisibleImage(visibleImage + 1)}) 
