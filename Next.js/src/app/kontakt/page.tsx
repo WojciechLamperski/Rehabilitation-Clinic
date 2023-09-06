@@ -24,7 +24,7 @@ export default async function Contact(){
         <section className="contact main__section main__section--margins">
             <div className="contact__wrapper">
 
-                <iframe className="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.1943991605153!2d14.663345019442097!3d53.37790803186555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700a7b07c986695%3A0x466e1f81c377e111!2sNZOZ%20Rehabilitacja-Majowe%20s.c.!5e0!3m2!1spl!2spl!4v1683221503953!5m2!1spl!2spl" width="100%" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.1943991605153!2d14.663345019442097!3d53.37790803186555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700a7b07c986695%3A0x466e1f81c377e111!2sNZOZ%20Rehabilitacja-Majowe%20s.c.!5e0!3m2!1spl!2spl!4v1683221503953!5m2!1spl!2spl" width="100%" height="450px" loading="lazy"></iframe>
 
 
                 <div className="contact__jumbotron">
@@ -83,7 +83,7 @@ export default async function Contact(){
                         </caption>
                         <tbody className="table__body">
 
-                            {reservationHrs.map((reservationHr)=>{
+                            {reservationHrs.map((reservationHr:any)=>{
                                 return(
                                     <tr className="table__row">
                                         <td className="table__cell" data-label="Day">{reservationHr.attributes.day}</td>

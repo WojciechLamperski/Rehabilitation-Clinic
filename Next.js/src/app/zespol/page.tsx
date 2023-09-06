@@ -1,5 +1,6 @@
 export default async function Team(){
 
+   
     const res = await fetch("http://172.28.64.1:1337/api/teams");
     const json = await res.json();
     const team = json.data;

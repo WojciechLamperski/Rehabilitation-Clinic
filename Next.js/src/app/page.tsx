@@ -4,6 +4,9 @@ import ReactMarkdown from "react-markdown";
 
 export default async function Home() {   
 
+    // const contentTypesRes = await fetch("http://172.28.64.1:1337/api/content-type-builder/content-types")
+    // const contentTypesjson = await contentTypesRes.json();
+    // console.log(contentTypesjson);
     const res = await fetch("http://172.28.64.1:1337/api/about");
     const json = await res.json();
     const about = json.data.attributes.body;
