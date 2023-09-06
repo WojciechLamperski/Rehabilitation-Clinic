@@ -1,5 +1,6 @@
 import Accordion from "@/components/Accordion/accordion"
 import 'accordion-js/dist/accordion.min.css';
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
 export default async function Treatments(){
@@ -26,7 +27,7 @@ export default async function Treatments(){
                         {preparation.attributes.body}
                     </ReactMarkdown>
                     </div>
-                    <img className="card__img" alt="pacjentka z lekarką uśmiechające się." src="img/treatments/patient.jpg" />
+                    <Image className="card__img" alt="pacjentka z lekarką uśmiechające się." src="img/treatments/patient.jpg" />
                 </div>
 
             </section>

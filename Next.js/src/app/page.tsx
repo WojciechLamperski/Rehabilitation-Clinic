@@ -1,12 +1,10 @@
 import Link from "next/link"
 import Carousel from "@/components/Carousel/carousel";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 export default async function Home() {   
 
-    // const contentTypesRes = await fetch("http://172.28.64.1:1337/api/content-type-builder/content-types")
-    // const contentTypesjson = await contentTypesRes.json();
-    // console.log(contentTypesjson);
     const res = await fetch("http://172.28.64.1:1337/api/about");
     const json = await res.json();
     const about = json.data.attributes.body;
@@ -76,7 +74,7 @@ export default async function Home() {
                         {about}
                     </ReactMarkdown>
                 </div>
-                <img className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" />
+                <Image className="card__img" alt="kobieta w trkakcie sesji chiropraktycznej, uśmiechająca się z zamkniętymi oczami" src="img/home/patient_smile.jpg" />
                 </div>
 
             </section>

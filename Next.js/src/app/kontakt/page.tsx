@@ -83,7 +83,7 @@ export default async function Contact(){
                         </caption>
                         <tbody className="table__body">
 
-                            {reservationHrs.map((reservationHr:any)=>{
+                            {reservationHrs.map((reservationHr: {attributes: {day: string, time: string}})=>{
                                 return(
                                     <tr className="table__row">
                                         <td className="table__cell" data-label="Day">{reservationHr.attributes.day}</td>

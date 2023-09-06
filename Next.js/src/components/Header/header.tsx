@@ -1,5 +1,6 @@
 import Link from "next/link"
 import MenuWithHamburger from "./menuWithHamburger"
+import Image from "next/image"
 
 export default function Header(){
 
@@ -9,7 +10,7 @@ export default function Header(){
             <div className="header--container container">
       
               <Link className="header__logo logo" href="/">
-                <img className="logo__img" src="/img/logo/logo.png" />
+                <Image alt="" className="logo__img" src="/img/logo/logo.png" />
               </Link>
               
               <MenuWithHamburger />

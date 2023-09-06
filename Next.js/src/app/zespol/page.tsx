@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 export default async function Team(){
 
-   
     const res = await fetch("http://172.28.64.1:1337/api/teams");
     const json = await res.json();
     const team = json.data;
@@ -9,10 +10,10 @@ export default async function Team(){
         <section className="team main__section main__section--margins">
             <div className="team__wrapper">
 
-                {team.map((member)=>{
+                {team.map((member: { attributes: {imageURL: string, name:string, title:string} })=>{
                     return(
                         <div className="team__card card">
-                            <img className="team__image" src={member.attributes.imageURL} alt="" />
+                            <Image className="team__image" src={member.attributes.imageURL} alt="an image of one of our team members" />
                             <h3 className="team__name">
                                 {member.attributes.name}
                             </h3>

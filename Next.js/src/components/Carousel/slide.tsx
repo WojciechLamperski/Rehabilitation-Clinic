@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function Slide({indexNumber, index, whitesmoke, children}){
 
     return(
         <div className={index===indexNumber ? "carousel__slide carousel__slide--1 carousel__slide--data-activ" : "carousel__slide carousel__slide--1"}>
 
-            <img className="carousel__img carousel__img--1" alt="lekarz w okularach uśmiechający się i spoglądający w stronę ekranu" src={`/img/home/${indexNumber}.jpg`} />
+            <Image className="carousel__img carousel__img--1" alt="" src={`/img/home/${indexNumber}.jpg`} />
 
             <div className="carousel__overlay"></div>
 
