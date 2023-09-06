@@ -8,9 +8,9 @@ export default async function Team(){
         <section className="team main__section main__section--margins">
             <div className="team__wrapper">
 
-                {team.map((member: { attributes: {imageURL: string, name:string, title:string} })=>{
+                {team.map((member: {id: string, attributes: {imageURL: string, name:string, title:string} })=>{
                     return(
-                        <div className="team__card card">
+                        <div key={member.id} className="team__card card">
                             <img className="team__image" src={member.attributes.imageURL} alt="an image of one of our team members" />
                             <h3 className="team__name">
                                 {member.attributes.name}

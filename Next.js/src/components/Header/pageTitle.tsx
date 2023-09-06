@@ -1,8 +1,14 @@
-'use client'
 import { usePathname } from 'next/navigation'
 import Link from "next/link"
 
-export default function PageTitle({siteName, url, toggle, setToggle}){
+interface PageTitleProps {
+    siteName: string;
+    url?: string;
+    toggle: boolean;
+    setToggle: (val: boolean)=> void;
+  }
+
+export default function PageTitle({siteName, url, toggle, setToggle}:PageTitleProps){
 
     const pathname = usePathname();
     const title = `${siteName.charAt(0).toUpperCase() + siteName.slice(1)}`;

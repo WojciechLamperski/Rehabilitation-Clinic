@@ -83,9 +83,9 @@ export default async function Contact(){
                         </caption>
                         <tbody className="table__body">
 
-                            {reservationHrs.map((reservationHr: {attributes: {day: string, time: string}})=>{
+                            {reservationHrs.map((reservationHr: {id: string, attributes: {day: string, time: string}})=>{
                                 return(
-                                    <tr className="table__row">
+                                    <tr key={reservationHr.id} className="table__row">
                                         <td className="table__cell" data-label="Day">{reservationHr.attributes.day}</td>
                                         <td className="table__cell" data-label="Time">{reservationHr.attributes.time}</td>
                                     </tr>
