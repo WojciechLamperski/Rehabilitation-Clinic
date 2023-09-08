@@ -637,6 +637,11 @@ body {
   }
 }
 @media (max-width: 961px) {
+
+  .carousel__img {
+    object-position: right;
+  }
+
   .carousel__overlay {
     opacity: 1;
   }
