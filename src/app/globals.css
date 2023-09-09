@@ -1017,6 +1017,12 @@ body {
   padding-right: 2.5em;
 }
 
+.table__cell--name {
+  text-align: start;
+  padding-left: 2.5em;
+  width: 60%;
+}
+
 @media (max-width: 1170px) {
   .pricing__wrapper {
     grid-template-columns: 100%;
