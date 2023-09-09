@@ -1032,6 +1032,7 @@ body {
     margin-bottom: 26px;
   }
   .pricing__table:last-child {
+    margin-top: 26px;
     margin-bottom: 0px;
   }
 }
