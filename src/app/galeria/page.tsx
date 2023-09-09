@@ -11,7 +11,7 @@ export default function Gallery(){
         <section className="team main__section main__section--margins">
             <div className="gallery__wrapper">
                 {[...Array(25)].map((x, i) =>
-                    <GalleryCard imageNumber={i+1} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
+                    <GalleryCard key={i+1} imageNumber={i+1} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
                 )}
             </div>
             <div className={popupVisible ? "popup" : "popup hidden"} id="js-popup">
@@ -20,7 +20,7 @@ export default function Gallery(){
                     <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
                 </svg>
                 </button>
-                <img src={`img/gallery/${visibleImage}.jpg`} className="popup__img" id="js-popup-img" />
+                <img className="popup__img" id="js-popup-img" src={`img/gallery/${visibleImage}.jpg`} alt="" />
 
                 <button onClick={
                     visibleImage === 25 ? (()=>{setVisibleImage(1)}) : (()=>{setVisibleImage(visibleImage + 1)}) 
