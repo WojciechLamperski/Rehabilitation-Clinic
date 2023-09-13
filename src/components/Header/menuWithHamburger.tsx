@@ -14,7 +14,7 @@ export default function MenuWithHamburger(){
                  <PageTitle setToggle={setToggle} toggle={toggle} siteName="Zabiegi" />
                  <PageTitle setToggle={setToggle} toggle={toggle} siteName="Cennik" />
                  <PageTitle setToggle={setToggle} toggle={toggle} siteName="Rehabilitacje" />
-                 <PageTitle setToggle={setToggle} toggle={toggle} siteName="Nasz Zespół" url="zespol"  />
+                 <PageTitle setToggle={setToggle} toggle={toggle} siteName="Nasz Zespół" url="/zespol"  />
                  <PageTitle setToggle={setToggle} toggle={toggle} siteName="Galeria" />
                  <PageTitle setToggle={setToggle} toggle={toggle} siteName="Kontakt" />
                 </ul>
