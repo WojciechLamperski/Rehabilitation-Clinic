@@ -1,10 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import HeadContent from '@/components/HeadContent/headContent'
 import Header from '@/components/Header/header'
 import Footer from '@/components/Footer/Footer'
 import { Ubuntu } from 'next/font/google'
-import { error } from 'console'
 
 
 const ubuntu = Ubuntu({
