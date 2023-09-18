@@ -44,7 +44,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   background-color: var(--grassGreen);
   overflow-x: hidden;
 }
@@ -921,7 +921,7 @@ body {
 }
 
 .team__card {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .team__card:last-child {
@@ -930,13 +930,14 @@ body {
 
 .team__image {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   border-radius: 10px;
   margin-bottom: 12px;
 }
 
 .team__image--wrapper{
   position: relative;
+  max-height: 100%;
 }
 
 .team__name {
@@ -959,7 +960,7 @@ body {
   .team {
     grid-column: 1/4;
   }
-  .team .wrapper__grid {
+  .team__wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 20px;
     margin-right: 20px;

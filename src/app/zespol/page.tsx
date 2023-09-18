@@ -6,7 +6,7 @@ export default function Team(){
             <div className="team__wrapper">
                 <div className="team__card card">
                     <div className="team__image team__image--wrapper">
-                        <Image sizes="(max-width: 961px) 270px, (max-width: 1170px) 50vw, 33vw" fill src="/img/team/Irena Waligorska 1.jpg" alt="" />
+                        <Image objectFit='contain' className="team__image" fill src="/img/team/Irena Waligorska 1.jpg" alt="" />
                     </div>
                     <h3 className="team__name">
                         Dr Irena Waligorska

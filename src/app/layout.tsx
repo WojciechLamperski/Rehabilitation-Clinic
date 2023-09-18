@@ -2,10 +2,10 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Header from '@/components/Header/header'
 import Footer from '@/components/Footer/Footer'
-import { Ubuntu } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
 
-const ubuntu = Ubuntu({
+const roboto = Roboto({
   weight: ['400', '500', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin', 'latin-ext'],
@@ -28,7 +28,7 @@ export default function RootLayout({
         
         <head />
         {/* <body className={inter.className}></body> */}
-        <body id="body"  className={ubuntu.className} >
+        <body id="body"  className={roboto.className} >
         <div id="page-wrapper">
           < Header />
           <main className="main">
