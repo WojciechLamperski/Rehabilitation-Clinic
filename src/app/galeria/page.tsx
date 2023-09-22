@@ -10,7 +10,7 @@ export default function Gallery(){
     return(
         <section className="team main__section main__section--margins">
             <div className="gallery__wrapper">
-                {[...Array(25)].map((x, i) =>
+                {[...Array(16)].map((x, i) =>
                     <GalleryCard key={i+1} imageNumber={i+1} setVisibleImage={setVisibleImage} setPopupVisible={setPopupVisible} />
                 )}
             </div>
