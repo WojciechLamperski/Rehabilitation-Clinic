@@ -966,6 +966,10 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .team__image--wrapper{
+    height: 500px;
+  }
 }
 @media (max-width: 961px) {
   .team__wrapper {
@@ -974,6 +978,9 @@ body {
   .team__card {
     padding: 0 16px;
   }
+  .team__image--wrapper{
+    height: 550px;
+  }
 }
 @media (max-width: 576px) {
   .team__wrapper {
@@ -981,6 +988,12 @@ body {
   }
   .team__card {
     padding: 0 20px;
+  }
+  .team__image--wrapper{
+    height: 700px;
+  }
+  .team__card{
+    margin-bottom: 20px;
   }
 }
 .pricing__wrapper {
