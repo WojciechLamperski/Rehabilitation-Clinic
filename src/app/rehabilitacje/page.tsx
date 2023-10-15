@@ -11,7 +11,11 @@ export default function Rehab(){
                             Rehabilitacja w warunkach domowych
                         </h1>
                         <p className="card__desc">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                            W przypadku kiedy Pacjent nie może skorzystać z opieki stacjonarnej, oferujemy również rehabilitację
+                            w domu pacjenta. Dysponujemy zespołem fizjoterapeutów z bogatym doświadczeniem, którzy dzięki
+                            wieloletniemu doświadczeniu są w stanie zaoferować profesjonalną pomoc również w warunkach domowych.
+                            W zależności od potrzeb terapeuci oferują zarówno trening rehabilitacyjny jak również specjalistyczne metody
+                            rehabilitacji neurologicznej, kardiologicznej, ortopedycznej oraz geriatrycznej.    
                         </p>
                     </div>
                 </div>
@@ -24,7 +28,10 @@ export default function Rehab(){
                             Rehabilitacja ambulatoryjna
                         </h1>
                     <p className="card__desc">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                        W naszej przychodni możecie Państwo skorzystać z pełnej gamy zabiegów rehabilitacyjnych.
+                        Oferujemy rehabilitację zarówno refundowaną przez NFZ jak również prywatną opiekę rehabilitacyjną.
+                        Wśród naszych zabiegów można znaleźć zarówno konwencjonalne zabiegi stosowane od lat, jak również
+                        innowacyjne metody takie jak m.in. klawiterapia, flossing czy terapia falą uderzeniową.
                     </p>
                     </div>
                 </div>
