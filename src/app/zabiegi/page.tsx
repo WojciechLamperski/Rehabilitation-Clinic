@@ -1,6 +1,10 @@
 import Accordion from "@/components/Accordion/accordion"
 import 'accordion-js/dist/accordion.min.css';
 
+export const metadata = {
+    title: "Zabiegi | NZOZ Rehabilitacja-Majowe",
+};
+
 export default function Treatments(){
 
     return(

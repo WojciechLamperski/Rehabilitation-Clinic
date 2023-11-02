@@ -28,7 +28,7 @@ export default function Accordion(){
 
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">wizyta fizjoterapeutyczna</button>
+                <button className="ac-trigger">Wizyta fizjoterapeutyczna</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Wizyta fizjoterapeutyczna to rodzaj konsultacji specjalistycznej w trakcie której przeprowadzany jest dokładny wywiad medyczny, w celu ustalenia głównego problemu pacjenta. Uzyskanie informacji na temat dolegliwości i objawów pacjenta, historii choroby bądź urazu, ogólnego stanu zdrowia, a także jego stylu życia –umożliwia ukierunkowanie dalszej diagnostyki oraz określenie celu terapii.
@@ -40,7 +40,7 @@ Fizjoterapeuta podczas wizyty każdorazowo zobowiązany jest do uzupełniania na
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">elektroterapia</button>
+                <button className="ac-trigger">Elektroterapia</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Elektrolecznictwem lub elektroterapią nazywa się dział lecznictwa fizykalnego, w którym wykorzystuje się do celów leczniczych prąd stały oraz prądy impulsowe małej i średniej częstotliwości. Prąd ma działanie przeciwbólowe i zmniejsza napięcie mięśniowe, poprawia ukrwienie, przyspiesza procesy regeneracji tkanek oraz sprawia, że obrzęki lepiej się wchłaniają.</p>
@@ -64,7 +64,7 @@ Fizjoterapeuta podczas wizyty każdorazowo zobowiązany jest do uzupełniania na
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">laseroterapia</button>
+                <button className="ac-trigger">Laseroterapia</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Laseroterapia wykorzystuje działanie światła o określonych cechach. Wiązka promieniowania laserowego
@@ -73,7 +73,7 @@ Fizjoterapeuta podczas wizyty każdorazowo zobowiązany jest do uzupełniania na
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">krioterapia</button>
+                <button className="ac-trigger">Krioterapia</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Wskazania do stosowania krioterapii miejscowej są bardzo
@@ -92,7 +92,7 @@ choroby narządu ruchu, stany po urazach i przeciążeniach, obrzęki po złaman
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">wodolecznictwo</button>
+                <button className="ac-trigger">Wodolecznictwo</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Wodolecznictwo, czyli hydroterapia stanowi najstarszy dział fizjoterapii. Podstawę leczniczego działania stanowi działanie termiczne i hydrostatyczne wody odpowiednio użytej do zabiegu. Zabiegi wodolecznicze związane są przede wszystkim ze złożonym działaniem na organizm człowieka zespołu czynników, w którym pierwszorzędną rolę odgrywa temperatura i ciśnienie hydrostatyczne. Właściwości fizyczne wody umożliwiają bardzo subtelne dawkowanie zarówno bodźców termicznych, jak i mechanicznych, uwzględniające indywidualne różnice w reaktywności organizmu chorego.</p>
@@ -100,7 +100,7 @@ choroby narządu ruchu, stany po urazach i przeciążeniach, obrzęki po złaman
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">masaż</button>
+                <button className="ac-trigger">Masaż</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Zabieg fizjoterapeutyczny polegający na sprężystym odkształcaniu tkanek, ma działanie lecznicze, relaksacyjne oraz przeciwobrzękowe. Masaż pozytywnie wpływa na organizm, zarówno w ujęciu somatycznym (w odniesieniu do ciała), jak i psychosomatycznym (oddziałując na umysł).</p>
@@ -108,7 +108,7 @@ choroby narządu ruchu, stany po urazach i przeciążeniach, obrzęki po złaman
             </div>
             <div className="ac card card--white">
             <h2 className="services__title services__title--treatments">
-                <button className="ac-trigger">fala uderzeniowa</button>
+                <button className="ac-trigger">Fala uderzeniowa</button>
             </h2>
             <div className="ac-panel services__desc">
                 <p className="ac-text">Terapia falami uderzeniowymi BTL SWT jest nieinwazyjnym nowoczesnym rozwiązaniem do eliminowania

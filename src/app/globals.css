@@ -101,12 +101,19 @@ body {
   --small: 1rem;
   --smallMedium: 1.125rem;
   --medium: 1.5rem;
-  --textWrapper__textSmall--fontSize: 1.75rem;
-  --textWrapper__textLarge--fontSize: 3.5rem;
+  --textWrapper__textSmall--fontSize: 1.6rem;
+  --textWrapper__textLarge--fontSize: 3.25rem;
   --serviceBlock__title--fontSize: 1.375rem;
   --textBlock__sectionTitle--fontSize: 1.17rem;
   --textBlock__descTitle--fontSize: 2rem;
   --wrapper__titleError--fontSize: 2rem;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --textWrapper__textSmall--fontSize: 1.25rem;
+    --textWrapper__textLarge--fontSize: 2.5rem;
+  }
 }
 
 .menu__item{
@@ -315,13 +322,13 @@ body {
   .header__menu {
     height: 100vh;
     width: 100vw;
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 0.4s 0.2s ease-in-out;
     z-index: 0;
     position: absolute;
     display: block;
     top: 0px;
-    right: 0px;
+    right: -100%;
     background-color: var(--backgroundWhite);
     padding-top: 110px;
     padding: 0px;
@@ -347,7 +354,7 @@ body {
     display: inline-block;
   }
   .menu--active {
-    transform: translateX(0);
+    transform: translateX(-100%);
     z-index: 6;
   }
 }
@@ -374,7 +381,7 @@ body {
 }
 
 .main__section--margins {
-  margin-top: 45px;
+  margin-top: 85px;
   margin-bottom: 30px;
 }
 
@@ -383,8 +390,32 @@ body {
   margin-bottom: 30px;
 }
 
+.main__section--second-one {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main__section--last-one {
+  margin-bottom: 90px;
+}
+
 .main__banner {
   width: 100%;
+}
+
+.main__section--margins-bottom {
+  margin-bottom: 95px;
+}
+
+@media (max-width: 576px) {
+  .main__section--margins {
+      margin-top: 52px;
+      margin-bottom: 30px;
+  }
+
+  .main__section--margins-bottom {
+    margin-bottom: 65px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -502,6 +533,14 @@ body {
   transition-delay: 150ms;
 }
 
+.jumbotron__wrapper--whitesmoke .carousel__title {
+  text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.65);
+}
+
+.jumbotron__wrapper--whitesmoke .carousel__desc {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.35);
+}
+
 .btn {
   text-decoration: none;
   cursor: pointer;
@@ -617,6 +656,7 @@ body {
     padding: 5px 0;
     border-radius: 20px;
     z-index: 2;
+    margin: 0 16px;
   }
   .carousel__img {
     display: block;
@@ -823,7 +863,7 @@ body {
 
 .card__container {
   display: flex;
-  margin-bottom: 74px;
+  margin-bottom: 30px;
 }
 
 .card--horizontal {
@@ -844,7 +884,7 @@ body {
 }
 
 .card__desc {
-  line-height: 1.9;
+  line-height: 1.75;
   text-align: justify;
   margin-right: 27px;
   font-size: var(--small);
@@ -874,11 +914,11 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 34px;
-    padding: 0;
+    padding: 0 28px;
   }
   .card--horizontal,
   .card__img {
-    min-width: 90%;
+    min-width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -921,7 +961,7 @@ body {
 }
 
 .team__card {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .team__card:last-child {
@@ -933,6 +973,7 @@ body {
   max-height: 100%;
   border-radius: 10px;
   margin-bottom: 12px;
+  object-position: top;
 }
 
 .team__image--wrapper{
@@ -990,7 +1031,7 @@ body {
     padding: 0 20px;
   }
   .team__image--wrapper{
-    height: 700px;
+    height: 370px;
   }
   .team__card{
     margin-bottom: 20px;
@@ -1205,6 +1246,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .gallery__card {
@@ -1381,8 +1423,8 @@ body {
   }
 }
 .treatments {
-  margin-bottom: 40px;
-  margin-top: -70px;
+  margin-bottom: 75px;
+  margin-top: -20px;
 }
 
 .services__title--treatments {
@@ -1392,11 +1434,11 @@ body {
 @media (max-width: 1170px) {
   .treatments {
     margin-top: -30px;
-    width: 90%;
+    padding: 0 28px;
   }
 }
 .heading {
-  padding: 40px;
+  padding: 60px 28px 40px;
 }
 
 .footer {
@@ -1542,7 +1584,12 @@ body {
 @media (max-width: 576px) {
   .treatments__svg,
   .rehab__svg{
-    display: none;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .rehab__title {
+    flex-direction: column;
   }
 
   .treatments--title{

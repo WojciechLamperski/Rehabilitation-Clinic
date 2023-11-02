@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "Kontakt | Rehabilitacja-Majowe",
+};
+
 export default function Contact(){
     return (
         <section className="contact main__section main__section--margins">
@@ -46,7 +50,7 @@ export default function Contact(){
                             </svg>
                             <p className="contact__pargraph">
                                 pn, śr, pt: 8:00 - 18:00 <br/>
-                                wt, czw: 8:00 - 21:00
+                                wt, czw: 8:00 - 19:00
                             </p>
 
                         </li>
@@ -68,7 +72,7 @@ export default function Contact(){
                             </tr>
                             <tr className="table__row">
                             <td className="table__cell" scope="row" data-label="Day">wt</td>
-                            <td className="table__cell" data-label="Time">11:00 - 18:00</td>
+                            <td className="table__cell" data-label="Time">11:00 - 17:30</td>
                             </tr>
                             <tr className="table__row">
                             <td className="table__cell" scope="row" data-label="Day">śr</td>
@@ -76,7 +80,7 @@ export default function Contact(){
                             </tr>
                             <tr className="table__row">
                             <td className="table__cell" scope="row" data-label="Day">czw</td>
-                            <td className="table__cell" data-label="Time">11:00 - 18:00</td>
+                            <td className="table__cell" data-label="Time">11:00 - 17:30</td>
                             </tr>
                             <tr className="table__row">
                             <td className="table__cell" scope="row" data-label="Day">pt</td>

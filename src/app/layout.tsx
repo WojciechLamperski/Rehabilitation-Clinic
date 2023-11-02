@@ -13,8 +13,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Rehabilitacja Majowe',
-  description: 'Klinika rehabilitacyjna',
+  title: 'NZOZ Rehabilitacja Majowe - Szczecin'
 }
 
 export default function RootLayout({

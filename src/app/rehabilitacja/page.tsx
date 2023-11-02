@@ -1,9 +1,13 @@
+export const metadata = {
+    title: "Rehabilitacja | Rehabilitacja-Majowe",
+};
+
 export default function Rehab(){
     return(
         <>
             <h1 className="heading">Oferujemy dwa rodzaje rehabilitacji</h1>
 
-            <section className="main__section main__section--margins">
+            <section className="main__section main__section--small-margins">
             <div className="card__container">
                     <div className="card">
                         <h1 className="rehab__title">
@@ -20,7 +24,7 @@ export default function Rehab(){
                     </div>
                 </div>
             </section>
-            <section className="main__section main__section--margins">
+            <section className="main__section main__section--second">
                 <div className="card__container">
                     <div className="card">
                     <h1 className="rehab__title">
@@ -37,8 +41,8 @@ export default function Rehab(){
                 </div>
             </section>
 
-            <h1>Informacja w sprawie świadczeń</h1>
-            <section className="main__section main__section--margins">
+            <h1 className="heading">Informacja w sprawie świadczeń</h1>
+            <section className="main__section main__section--last-one">
                 <div className="card__container">
                     <div className="card">
                     <p className="card__desc">

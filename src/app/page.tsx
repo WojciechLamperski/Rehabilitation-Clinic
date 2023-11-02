@@ -62,7 +62,7 @@ export default function Home() {
         <div className="card__container">
         <div className="card--horizontal card">
             <h3 className="card__top card__top--text">O nas </h3>
-            <h1 className="card__title">Witamy w NZOZ rehabilitacja majowe</h1>
+            <h1 className="card__title">Witamy w NZOZ Rehabilitacja-Majowe</h1>
             <p className="card__desc">
             Jesteśmy nowoczesną i doskonale wyposażoną placówka rehabilitacyjną. W trosce o Państwa zdrowie oferujemy wysokiej jakości sprzęt rehabilitacyjny oraz wykwalifikowany personel, który służy Państwu swoją wiedzą i pomocą na każdym etapie rehabilitacji. W Naszej placówce mogą Państwo skorzystać zarówno z konsultacji lekarza specjalisty z zakresu balneoklimatologii i medycyny fizykalnej, jak i z pełnej gamy zabiegów mających za zadanie przywrócić Państwu sprawność fizyczną. Wykonujemy zabiegi z zakresu: <i>elektroterapii, wodolecznicznictwa, krioterapii, światłolecznictwa, magnetoterapii, laseroterapii , masażu i kinezyterapii</i>.
             </p>
