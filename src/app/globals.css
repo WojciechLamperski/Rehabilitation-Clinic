@@ -1614,4 +1614,10 @@ body {
 .treatments--title{
   margin-left: -7px;
 }
+
+.ac-text{
+  text-align: justify;
+  padding: 1rem!important;
+}
+
 /*# sourceMappingURL=style.css.map */

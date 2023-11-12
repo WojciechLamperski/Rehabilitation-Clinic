@@ -19,7 +19,6 @@ export default function Contact(){
                             </svg>
                             <p className="contact__pargraph">
                             <a className="contact__link contact__link--top unsetLink" href="tel:+48914643945">(+48)914643945</a>
-                            <a className="contact__link contact__link--bottom unsetLink" href="tel:+48914600369">(+48)914600369</a>
                             </p>
 
                         </li>
@@ -49,8 +48,8 @@ export default function Contact(){
                             <path d="m627 769 45-45-159-160V363h-60v225l174 181ZM480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-82 31.5-155t86-127.5Q252 239 325 207.5T480 176q82 0 155 31.5t127.5 86Q817 348 848.5 421T880 576q0 82-31.5 155t-86 127.5Q708 913 635 944.5T480 976Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480 236q-140 0-240 100T140 576q0 140 100 240t240 100Z" />
                             </svg>
                             <p className="contact__pargraph">
-                                pn, śr, pt: 8:00 - 18:00 <br/>
-                                wt, czw: 8:00 - 19:00
+                                pn, śr, pt: 7:30 - 18:00 <br/>
+                                wt, czw: 7:30 - 19:00
                             </p>
 
                         </li>

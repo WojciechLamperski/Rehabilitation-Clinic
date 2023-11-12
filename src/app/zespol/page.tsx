@@ -38,7 +38,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Idalia Jarosz
                     </h3>
-                    <p className="team__degree">Mgr fizjoterapii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -47,7 +47,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Daria Mazgoła
                     </h3>
-                    <p className="team__degree">Lek. med. spec. fizjoterapii i balneoklimatologii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -74,7 +74,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Oksana Kaniuk
                     </h3>
-                    <p className="team__degree">Mgr fizjoterapii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -83,7 +83,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Ewa Bajraszewska
                     </h3>
-                    <p className="team__degree">Lek. med. spec. fizjoterapii i balneoklimatologii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -110,7 +110,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Marek Stasiak
                     </h3>
-                    <p className="team__degree">Mgr fizjoterapii</p>
+                    <p className="team__degree">Masażysta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -119,7 +119,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Mariola Bejnarowicz
                     </h3>
-                    <p className="team__degree">Lek. med. spec. fizjoterapii i balneoklimatologii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -137,7 +137,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Patrycja Kawałek
                     </h3>
-                    <p className="team__degree">Mgr fizjoterapii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
@@ -146,7 +146,7 @@ export default function Team(){
                     <h3 className="team__name">
                         Karolina Świderska-Karlikowska
                     </h3>
-                    <p className="team__degree">Mgr fizjoterapii</p>
+                    <p className="team__degree">Fizjoterapeuta</p>
                 </div>
                 <div className="team__card card">
                     <div className="team__image--wrapper">
