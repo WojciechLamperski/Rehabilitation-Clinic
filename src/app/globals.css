@@ -1483,6 +1483,11 @@ body {
   margin-bottom: 16px;
 }
 
+.footer__paragraph a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__svg{
   padding-top: 6px;
 }
