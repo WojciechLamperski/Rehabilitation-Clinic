@@ -10,7 +10,6 @@ export default function Footer(){
                     </div>
                     <div className="footer__block">
                     <p className="footer__paragraph">tel: +48 91 464 39 45</p>
-                    <p className="footer__paragraph">fax: +48 91 464 03 69</p>
                     <p className="footer__paragraph">mail: poradnia@rehabilitacja-majowe.pl</p>
                     </div>
                     <div className="footer__block">
