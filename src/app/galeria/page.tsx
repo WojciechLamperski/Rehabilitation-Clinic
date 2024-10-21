@@ -107,6 +107,29 @@ export default function Gallery(){
         setUpdate(true)
     }
 
+    // ------------------------------------------------
+
+    const [pokemon, setPokemon] = useState('');
+
+    useEffect(() => {
+        async function fetchPokemon (){
+            await fetch('https://pokeapi.co/api/v2/pokemon/pikachu').then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // Parse the JSON response
+            }).then((jsonData) => {
+                setPokemon(jsonData.weight);
+            }).catch()
+        }
+
+        if(!pokemon){
+            void fetchPokemon()
+        }else{
+            console.log(pokemon);
+        }
+    }, [pokemon]);
+
     return(
        <>
            <button onClick={startCounter}>Start counter</button>
@@ -140,6 +163,8 @@ export default function Gallery(){
                     )
                })}
            </ul>
+
+           <div>Did you know that Pikachus weight is {pokemon} kilograms? :o</div>
 
            {/*Previously had scrollToBottom*/}
            <button onClick={test}>Scroll down</button>
