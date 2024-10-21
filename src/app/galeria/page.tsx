@@ -68,13 +68,78 @@ export default function Gallery(){
         setCounting(true);
     };
 
+    // ------------------------------------------------
+    // ------------------ TO DO LIST ------------------
+
+    // const [list, setList] = useState([]);
+    // const [input, setInput] = useState('');
+    //
+    // const addToList = (e) => {
+    //     e.preventDefault()
+    //     setList((prev)=>[...prev, input]);
+    // }
+
+    const [list, setList] = useState([]);
+    const [input, setInput] = useState('');
+    const [update, setUpdate] = useState(false);
+
+    useEffect(() => {
+        if(update){
+            const search = list.find(x => x.key === input)
+            console.log(search)
+            if(search){
+                const position = list.findIndex(x => x.key === input)
+                const newList = list
+                newList[position].value += 1
+                setList(newList);
+            }
+            else{
+                setList((prev) => {
+                    return [...prev, { 'key': input, 'value': 1 } ]
+                });
+            }
+            setUpdate(false)
+        }
+    }, [list, update]);
+
+    const addToList = (e) => {
+        e.preventDefault()
+        setUpdate(true)
+    }
+
     return(
        <>
            <button onClick={startCounter}>Start counter</button>
-           <button onClick={()=>{setCounting(false)}}>Stop counter</button>
+           <button onClick={() => {
+               setCounting(false)
+           }}>Stop counter
+           </button>
            <div>{seconds}</div>
            <button onClick={countRefFunc}>Count with Ref</button>
            <button onClick={countStateFunc}>Count with State</button>
+
+           <form onSubmit={addToList}>
+               <br/>
+               <label htmlFor="todo">Add to list:</label>
+               <br/>
+               <input onChange={(e)=>{setInput(e.target.value)}} value={input} type="text" id="todo"></input>
+               <br/>
+               <button type="submit">Submit</button>
+           </form>
+
+           <br/>
+           <ul>
+               {list.map((element)=>{
+                    return(
+                       // Don't use index as key.
+                       // https://www.youtube.com/watch?v=cyAbjx0mfKM
+                       // https://stackoverflow.com/questions/39549424/how-to-create-unique-keys-for-react-elements
+                       <li key={element.key}>{element.key} : {element.value}</li>
+                       // Instead what I would do is use the value of element as unique id, and when there is the second same value input simply add one more to it.
+                       // That would require the creation of an object that holds how many values exist
+                    )
+               })}
+           </ul>
 
            {/*Previously had scrollToBottom*/}
            <button onClick={test}>Scroll down</button>
@@ -91,7 +156,7 @@ export default function Gallery(){
                       )
                    )}
                </div>
-               <div className={popupVisible ? "popup" : "popup hidden"} id="js-popup">
+               <div className={popupVisible ? 'popup' : 'popup hidden'} id="js-popup">
                    <button className="popup__button popup__button--close" id="js-popup-close" onClick={() => {
                        setPopupVisible(false)
                    }}>
